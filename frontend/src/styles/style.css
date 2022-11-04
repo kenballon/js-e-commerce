@@ -45,6 +45,14 @@ a:not([class]) {
           text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #8e1fff;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -110,7 +118,6 @@ h5 {
 .container {
   width: min(90%, 90rem);
   margin-inline: auto;
-  border: 1px dashed rgba(255, 29, 29, 0.924);
   padding: 1rem;
 }
 
@@ -120,7 +127,7 @@ h5 {
 }
 
 .auto-fit {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-col-2 {
@@ -135,7 +142,63 @@ h5 {
   justify-content: space-between;
 }
 
+.space-y-1 {
+  margin-block: 1rem;
+}
+
+.space-y-24px {
+  margin-block: 1.5rem;
+}
+
+.space-y-bottom-24px {
+  margin-bottom: 1.5rem;
+}
+
+.space-y-bottom-32px {
+  margin-bottom: 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 /*#endregion UTILITY CLASSES */
+/*region HEADER */
+header .store-logo-wrapper .logo-link-home {
+  position: relative;
+  font-weight: 600;
+}
+header .store-logo-wrapper .logo-link-home .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+  font-weight: 300;
+  font-size: 10px;
+  padding-inline: 10px;
+}
+header .store-logo-wrapper .logo-link-home .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+header .store-logo-wrapper .logo-link-home:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*endregion HEADER */
 /*#region PRODUCT CARDS*/
 .products {
   margin-block: 2rem;
@@ -146,12 +209,23 @@ h5 {
 }
 .products .product {
   flex: 1;
-}
-.products .product .product-card {
   background-color: rgb(237, 237, 237);
 }
-.products .product .product-card img {
+.products .product .product-card {
+  transition: all 0.3s ease-in-out;
+}
+.products .product .product-card figure picture {
+  overflow: hidden;
+}
+.products .product .product-card figure picture img {
   width: 100%;
+  min-height: 458px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.products .product .product-card:hover figure picture img {
+  transform: scale(1.3);
 }
 .products .product .product-card article {
   padding: 1rem;
