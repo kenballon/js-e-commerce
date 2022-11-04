@@ -30,7 +30,6 @@ ol[role=list] {
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
-  font-size: 62.5%;
 }
 
 /* Set core body defaults */
@@ -77,6 +76,18 @@ select {
     scroll-behavior: auto !important;
   }
 }
+html {
+  font-size: 16px;
+  height: 100%;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+}
+html body footer {
+  margin-top: auto;
+}
+
 /*#endregion CSS Reset */
 :root {
   --ff-heading: "Inter", sans-serif;
@@ -108,6 +119,10 @@ h5 {
   grid-template-columns: 1fr;
 }
 
+.auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -120,4 +135,26 @@ h5 {
   justify-content: space-between;
 }
 
-/*#endregion UTILITY CLASSES *//*# sourceMappingURL=style.css.map */
+/*#endregion UTILITY CLASSES */
+/*#region PRODUCT CARDS*/
+.products {
+  margin-block: 2rem;
+  position: relative;
+  padding: 0;
+  list-style: none;
+  gap: 0.625rem;
+}
+.products .product {
+  flex: 1;
+}
+.products .product .product-card {
+  background-color: rgb(237, 237, 237);
+}
+.products .product .product-card img {
+  width: 100%;
+}
+.products .product .product-card article {
+  padding: 1rem;
+}
+
+/*#endregion PRODUCT CARDS*//*# sourceMappingURL=style.css.map */
