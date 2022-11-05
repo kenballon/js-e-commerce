@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" sizes="96x96"
         href="//cdn.shopify.com/s/files/1/0424/9583/6319/files/Icon_a8cc31a9-ab99-4b71-94e9-e345d48182b3_32x32.png?v=1646008338">
+    <script type="module" src="app.js" defer></script>
 </head>
 
 <body>
     <header class="container d-flex justify-between space-y-1">
         <div class="store-logo-wrapper">
-            <a href="/" class="logo-link-home">
+            <a href="#/" class="logo-link-home">
                 <img src="/images/8seconds-logo.webp" alt="">
                 <span class="tooltiptext">Click to go back to home</span>
             </a>
@@ -28,90 +29,10 @@
         </div>
     </header>
     <main class="container space-y-24px">
-        <h1 class="space-y-bottom-32px">Build with Vanilla JavaScript, an e-commerce website</h1>
-
-        <ul class="products grid auto-fit">
-            <li class="product">
-                <a href="/" class="product-link-card">
-                    <div class="product-card">
-                        <figure class="img">
-                            <picture>
-                                <img src="/images/1.webp" alt="sample product image">
-                            </picture>
-                        </figure>
-                        <article class="product-dets">
-                            <h4 class="product-name">Chips Stacking Mug – Grey</h4>
-                            <p class="price">$38</p>
-                            <p class="product-branding">Provider Store</p>
-                        </article>
-                    </div>
-                </a>
-            </li>
-            <li class="product">
-                <a href="/" class="product-link-card">
-                    <div class="product-card">
-                        <figure class="img">
-                            <picture>
-                                <img src="/images/2.jpeg" alt="sample product image">
-                            </picture>
-                        </figure>
-                        <article class="product-dets">
-                            <h4 class="product-name">Chips Stacking Mug – Grey</h4>
-                            <p class="price">$38</p>
-                            <p class="product-branding">Provider Store</p>
-                        </article>
-                    </div>
-                </a>
-            </li>
-            <li class="product">
-                <a href="/" class="product-link-card">
-                    <div class="product-card">
-                        <figure class="img">
-                            <picture>
-                                <img src="/images/3.webp" alt="sample product image">
-                            </picture>
-                        </figure>
-                        <article class="product-dets">
-                            <h4 class="product-name">Chips Stacking Mug – Grey</h4>
-                            <p class="price">$38</p>
-                            <p class="product-branding">Provider Store</p>
-                        </article>
-                    </div>
-                </a>
-            </li>
-            <li class="product">
-                <a href="/" class="product-link-card">
-                    <div class="product-card">
-                        <figure class="img">
-                            <picture>
-                                <img src="/images/4.webp" alt="sample product image">
-                            </picture>
-                        </figure>
-                        <article class="product-dets">
-                            <h4 class="product-name">Chips Stacking Mug – Grey</h4>
-                            <p class="price">$38</p>
-                            <p class="product-branding">Provider Store</p>
-                        </article>
-                    </div>
-                </a>
-            </li>
-            <li class="product">
-                <a href="/" class="product-link-card">
-                    <div class="product-card">
-                        <figure class="img">
-                            <picture>
-                                <img src="/images/5.webp" alt="sample product image">
-                            </picture>
-                        </figure>
-                        <article class="product-dets">
-                            <h4 class="product-name">Chips Stacking Mug – Grey</h4>
-                            <p class="price">$38</p>
-                            <p class="product-branding">Provider Store</p>
-                        </article>
-                    </div>
-                </a>
-            </li>
-        </ul>
+        <section>
+            <h1 class="space-y-bottom-32px">Build with Vanilla JavaScript, an e-commerce website</h1>
+        </section>
+        <section id="section-products-wrapper"></section>
     </main>
     <footer class="container">
         <p class="text-align-center"><span>©All Rights Reserve 2022</span></p>

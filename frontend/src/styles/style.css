@@ -163,7 +163,7 @@ h5 {
 }
 
 /*#endregion UTILITY CLASSES */
-/*region HEADER */
+/*#region HEADER */
 header .store-logo-wrapper .logo-link-home {
   position: relative;
   font-weight: 600;
@@ -198,7 +198,7 @@ header .store-logo-wrapper .logo-link-home:hover .tooltiptext {
   visibility: visible;
 }
 
-/*endregion HEADER */
+/*#endregion HEADER */
 /*#region PRODUCT CARDS*/
 .products {
   margin-block: 2rem;
