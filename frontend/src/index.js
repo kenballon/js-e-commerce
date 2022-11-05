@@ -2,6 +2,7 @@ import { parseRequestUrl } from "./util.js";
 import Error404Page from "./Views/Error404Page.js";
 import HomePage from "./Views/HomePage.js";
 import ProductPage from "./Views/ProductPage.js";
+// import "../styles/style.scss";
 
 const routes = {
   "/": HomePage,

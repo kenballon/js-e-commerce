@@ -1,17 +1,19 @@
+import axios from "axios";
+
 const HomePage = {
   render: async () => {
-    // const { products } = data;
-    const response = await fetch("http://localhost:3000/api/products", {
+    const response = await axios({
+      url: "http://localhost:3000/api/products",
       headers: {
         "Content-type": "application/json",
       },
     });
 
-    if (!response || !response.ok) {
+    if (!response || response.statusText !== "OK") {
       return `<div><label>Unable to get the data.</label></div>`;
     }
 
-    const products = await response.json();
+    const products = response.data;
 
     return `
         <ul class="products grid auto-fit">
