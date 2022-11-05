@@ -8,7 +8,7 @@ const routes = {
   "/product/:id": ProductPage,
 };
 
-const router = () => {
+const router = async () => {
   const request = parseRequestUrl();
   const parseUrl =
     (request.resource ? `/${request.resource}` : "/") +
@@ -18,7 +18,7 @@ const router = () => {
   const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
 
   const main = document.getElementById("section-products-wrapper");
-  main.innerHTML = screen.render();
+  main.innerHTML = await screen.render();
 };
 
 window.addEventListener("load", router);

@@ -1,8 +1,18 @@
-import data from "../scripts/data.js";
-
 const HomePage = {
-  render: () => {
-    const { products } = data;
+  render: async () => {
+    // const { products } = data;
+    const response = await fetch("http://localhost:3000/api/products", {
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    if (!response || !response.ok) {
+      return `<div><label>Unable to get the data.</label></div>`;
+    }
+
+    const products = await response.json();
+
     return `
         <ul class="products grid auto-fit">
         ${products

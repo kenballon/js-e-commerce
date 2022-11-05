@@ -1,0 +1,24 @@
+{
+  "name": "js-e-commerce",
+  "version": "1.0.0",
+  "description": "Vanilla JavaScript E-Commerce Website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenballon/js-e-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenballon/js-e-commerce/issues"
+  },
+  "homepage": "https://github.com/kenballon/js-e-commerce#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
