@@ -9,6 +9,6 @@ app.get("/api/products", (req, res) => {
   res.send(data.products);
 });
 
-app.listen(3000, () => {
-  console.log("serve at http://localhost:3000");
+app.listen(8080, () => {
+  console.log("serve at http://localhost:8080");
 });

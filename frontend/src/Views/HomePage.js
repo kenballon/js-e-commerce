@@ -3,7 +3,7 @@ import axios from "axios";
 const HomePage = {
   render: async () => {
     const response = await axios({
-      url: "http://localhost:3000/api/products",
+      url: "http://localhost:8080/api/products",
       headers: {
         "Content-type": "application/json",
       },
