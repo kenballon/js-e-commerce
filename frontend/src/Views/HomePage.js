@@ -35,12 +35,10 @@ const HomePage = {
                         </article>
                     </div>
                 </a>
-            </li>
-        `
+            </li>`
           )
           .join("\n")}            
-        </ul>
-        `;
+        </ul>`;
   },
 };
 
