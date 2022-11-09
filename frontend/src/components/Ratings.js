@@ -37,8 +37,8 @@ const Rating = {
                       props.value >= 4
                         ? "fa-solid fa-star"
                         : props.value >= 3.5
-                        ? "fa fa-start-half-o"
-                        : "fa-solid fa-star-half-stroke"
+                        ? "fa-solid fa-star-half-stroke"
+                        : "fa-regular fa-star"
                     }"></i>
                 </span>
                 <span>

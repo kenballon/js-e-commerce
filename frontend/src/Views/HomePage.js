@@ -35,7 +35,7 @@ const HomePage = {
                             <h4 class="product-name">${product.name}</h4>
                             <div class="price">
                               <div>$ ${product.price}</div>
-                              <div>$ ${Rating.render({
+                              <div>${Rating.render({
                                 value: product.rating,
                                 text: product.numOfReviews + " Reviews",
                               })}</div>                              
