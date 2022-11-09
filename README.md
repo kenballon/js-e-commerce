@@ -1,4 +1,4 @@
-# js-e-commerce
+# A Vanila JavaScript E-commerce Site
 
 Vanilla JavaScript E-Commerce Website.
 
