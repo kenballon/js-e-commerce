@@ -10,9 +10,9 @@ module.exports = {
     publicPath: "/",
     path: path.resolve(__dirname, "dist"),
     filename: "[name][contenthash].js",
-    // clean: true,
+    clean: true,
   },
-  //   devtool: "source-map",
+  devtool: "source-map",
   devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),

@@ -8,7 +8,7 @@ export default {
       brand: "8seconds",
       rating: 4.5,
       price: 60,
-      numOfReviews: 10,
+      numOfReviews: 3.5,
       countInStock: 6,
     },
     {
@@ -19,7 +19,7 @@ export default {
       brand: "8seconds",
       rating: 4.5,
       price: 60,
-      numOfReviews: 10,
+      numOfReviews: 4,
       countInStock: 6,
     },
     {
@@ -30,7 +30,7 @@ export default {
       brand: "8seconds",
       rating: 4.5,
       price: 60,
-      numOfReviews: 10,
+      numOfReviews: 3,
       countInStock: 6,
     },
     {
@@ -52,7 +52,7 @@ export default {
       brand: "8seconds",
       rating: 4.5,
       price: 60,
-      numOfReviews: 10,
+      numOfReviews: 2.5,
       countInStock: 6,
     },
   ],

@@ -1,4 +1,5 @@
 import axios from "axios";
+import Rating from "../components/Ratings";
 
 const HomePage = {
   render: async () => {
@@ -25,13 +26,23 @@ const HomePage = {
                     <div class="product-card">
                         <figure class="img">
                             <picture>
-                                <img src="${product.image}" alt="${product.name}">
+                                <img src="${product.image}" alt="${
+              product.name
+            }">
                             </picture>
                         </figure>
                         <article class="product-dets">
                             <h4 class="product-name">${product.name}</h4>
-                            <p class="price">$ ${product.price}</p>
-                            <p class="product-branding">Brand: ${product.brand}</p>
+                            <div class="price">
+                              <div>$ ${product.price}</div>
+                              <div>$ ${Rating.render({
+                                value: product.rating,
+                                text: product.numOfReviews + " Reviews",
+                              })}</div>                              
+                            </div>
+                            <p class="product-branding">Brand: ${
+                              product.brand
+                            }</p>
                         </article>
                     </div>
                 </a>
