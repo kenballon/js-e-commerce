@@ -165,6 +165,10 @@ h5 {
     margin-bottom: 2rem;
 }
 
+.gap-1 {
+    gap: 1rem;
+}
+
 // text alignment 
 .text-align-center {
     text-align: center;
@@ -274,3 +278,40 @@ header {
 }
 
 /*#endregion PRODUCT CARDS*/
+
+/*#region PRODUCT PAGE*/
+article {
+    div {
+        .product-img-wrapper {
+            max-width: 650px;
+        }
+
+        .product-details-container {
+            padding-inline: 2rem;
+
+            h1.product-title {
+                font-size: 2.5rem;
+            }
+
+            .product-current-price {
+                font-size: 1.7rem;
+            }
+
+            .short-desc {
+                p {
+                    margin-block: 2.5rem;
+                    font-size: 14px;
+                }
+            }
+
+            div {
+                .dropdown.size-dropdown {
+                    padding: 1rem;
+                    border: 1px solid #333;
+                }
+            }
+        }
+    }
+}
+
+/*#endregion PRODUCT PAGE*/
