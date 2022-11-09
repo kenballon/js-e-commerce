@@ -257,8 +257,16 @@ header {
             }
 
 
-            article {
+            article.product-dets {
                 padding: 1rem;
+
+                .price {
+                    .rating {
+                        .star-rating-container {
+                            color: #f3b700;
+                        }
+                    }
+                }
             }
         }
 

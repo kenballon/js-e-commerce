@@ -5,7 +5,7 @@ const Rating = {
     }
     return `
             <div class="rating">
-                <span>                               
+                <span class="star-rating-container">                               
                     <i class="${
                       props.value >= 1
                         ? "fa-solid fa-star"
@@ -14,7 +14,7 @@ const Rating = {
                         : "fa-regular fa-star"
                     }"></i>
                 </span>
-                <span>
+                <span class="star-rating-container">
                     <i class="${
                       props.value >= 2
                         ? "fa-solid fa-star"
@@ -23,7 +23,7 @@ const Rating = {
                         : "fa-regular fa-star"
                     }"></i>
                 </span>
-                <span>
+                <span class="star-rating-container">
                     <i class="${
                       props.value >= 3
                         ? "fa-solid fa-star"
@@ -32,7 +32,7 @@ const Rating = {
                         : "fa-regular fa-star"
                     }"></i>
                 </span>
-                <span>
+                <span class="star-rating-container">
                     <i class="${
                       props.value >= 4
                         ? "fa-solid fa-star"
@@ -41,7 +41,7 @@ const Rating = {
                         : "fa-regular fa-star"
                     }"></i>
                 </span>
-                <span>
+                <span class="star-rating-container">
                     <i class="${
                       props.value >= 5
                         ? "fa-solid fa-star"
