@@ -17,7 +17,7 @@ export const getProduct = async (id) => {
   } catch (err) {
     console.log(err);
     return {
-      error: err.message,
+      error: err.response.data.message || err.message,
     };
   }
 };

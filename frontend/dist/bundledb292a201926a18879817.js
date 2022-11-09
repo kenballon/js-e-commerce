@@ -667,35 +667,38 @@ const ProductPage = {
   render: async () => {
     const request = (0,_util__WEBPACK_IMPORTED_MODULE_1__.parseRequestUrl)();
     const product = await (0,_api__WEBPACK_IMPORTED_MODULE_0__.getProduct)(request.id);
+    if (product.error) {
+      return `<div>${product.error}</div>`;
+    }
+
     return `
        <article>
-        <div class="d-flex">
-            <div class="product-img-wrapper">
-                <figure>
-                    <picture>
-                        <img src="${product.image}" alt="just image">
-                    </picture>
-                </figure>
-            </div>
-            <article class="product-details-container">
-                <h1 class="product-title">${product.name}</h1>
-                <p class="product-current-price">$ ${product.price}</p>
-                <div class="short-desc">
-                    <p>${product.shortDesciption}</p>
-                </div>
-                <div class="d-flex gap-1">
-                    <div class="dropdown size-dropdown">
-                        34
-                    </div>
-                    <button>Select This Size</button>
-                </div>
-                <div class="sold-out-text space-y-24px">
-                    <p>Remaining Item: ${product.countInStock}</p>
-                </div>
-            </article>
-
-        </div>
-    </article>`;
+          <div class="d-flex">
+              <div class="product-img-wrapper">
+                  <figure>
+                      <picture>
+                          <img src="${product.image}" alt="just image">
+                      </picture>
+                  </figure>
+              </div>
+              <article class="product-details-container">
+                  <h1 class="product-title">${product.name}</h1>
+                  <p class="product-current-price">$ ${product.price}</p>
+                  <div class="short-desc">
+                      <p>${product.shortDesciption}</p>
+                  </div>
+                  <div class="d-flex gap-1">
+                      <div class="dropdown size-dropdown">
+                          34
+                      </div>
+                      <button>Select This Size</button>
+                  </div>
+                  <div class="sold-out-text space-y-24px">
+                      <p>Remaining Item: ${product.countInStock}</p>
+                  </div>
+              </article>
+          </div>
+        </article>`;
   },
 };
 
@@ -736,7 +739,7 @@ const getProduct = async (id) => {
   } catch (err) {
     console.log(err);
     return {
-      error: err.message,
+      error: err.response.data.message || err.message,
     };
   }
 };
@@ -4828,4 +4831,4 @@ window.addEventListener("hashchange", router);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundledc86c551a54a9ba38a6d0.js.map
+//# sourceMappingURL=bundledb292a201926a18879817.js.map
