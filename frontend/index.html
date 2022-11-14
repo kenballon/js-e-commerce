@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla JS E-Commerce Site!!!</title>
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" sizes="96x96"
         href="//cdn.shopify.com/s/files/1/0424/9583/6319/files/Icon_a8cc31a9-ab99-4b71-94e9-e345d48182b3_32x32.png?v=1646008338">
 </head>
@@ -32,6 +32,34 @@
             <h1 class="space-y-bottom-32px">Build with Vanilla JavaScript, an e-commerce website</h1>
         </section>
         <section id="section-products-wrapper"></section>
+        <section class="cart-details">
+            <h1 class="space-y-24px border-bottom-1">Your Order</h1>
+            <div class="grid grid-col-2 border-bottom-1 padding-y-1">
+                <figure>
+                    <picture class="cart-img">
+                        <img src="../frontend/images/1.webp" alt="">
+                    </picture>
+                </figure>
+                <div class="cart-details">
+                    <h3 class="product-name">
+                        test only
+                    </h3>
+                    <p>$59.00</p>
+                    <div class="item-count">
+                        <h4>Items:</h4>
+                        <span class="remove-item-count">
+                            <button id="less">-</button>
+                        </span>
+                        <span class="quantity">
+                            <input type="text" value="1">
+                        </span>
+                        <span class="add-item-count">
+                            <button id="add-more">+</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="container">
         <p class="text-align-center"><span>©All Rights Reserve 2022</span></p>

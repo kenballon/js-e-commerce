@@ -12,6 +12,7 @@ export default {
       price: 60,
       numOfReviews: 200,
       countInStock: 6,
+      qty: 0,
     },
     {
       _id: "2",
@@ -25,6 +26,7 @@ export default {
       price: 60,
       numOfReviews: 88,
       countInStock: 6,
+      qty: 0,
     },
     {
       _id: "3",
@@ -38,6 +40,7 @@ export default {
       price: 60,
       numOfReviews: 6,
       countInStock: 6,
+      qty: 0,
     },
     {
       _id: "4",
@@ -51,6 +54,7 @@ export default {
       price: 60,
       numOfReviews: 51,
       countInStock: 6,
+      qty: 0,
     },
     {
       _id: "5",
@@ -64,6 +68,7 @@ export default {
       price: 60,
       numOfReviews: 40,
       countInStock: 6,
+      qty: 0,
     },
   ],
 };

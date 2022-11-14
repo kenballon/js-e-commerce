@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*#region CSS Reset */\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nfigure,\nblockquote,\ndl,\ndd {\n  margin: 0;\n}\n\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul[role=list],\nol[role=list] {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\na {\n  text-decoration: none;\n  color: #333;\n}\na:hover {\n  color: #8e1fff;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n    scroll-behavior: auto;\n  }\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\nhtml {\n  font-size: 16px;\n  height: 100%;\n}\nhtml body {\n  display: flex;\n  flex-direction: column;\n}\nhtml body footer {\n  margin-top: auto;\n}\n\n/*#endregion CSS Reset */\n:root {\n  --ff-heading: \"Inter\", sans-serif;\n  --ff-body: \"Plus Jakarta Sans\", sans-serif;\n}\n\nbody {\n  font-family: var(--ff-body);\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n  font-family: var(--ff-heading);\n}\n\n/*#region UTILITY CLASSES */\n.container {\n  width: min(90%, 90rem);\n  margin-inline: auto;\n  padding: 1rem;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: 1fr;\n}\n\n.auto-fit {\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n.grid-col-2 {\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.d-flex {\n  display: flex;\n}\n\n.justify-between {\n  justify-content: space-between;\n}\n\n.space-y-1 {\n  margin-block: 1rem;\n}\n\n.space-y-24px {\n  margin-block: 1.5rem;\n}\n\n.space-y-bottom-24px {\n  margin-bottom: 1.5rem;\n}\n\n.space-y-bottom-32px {\n  margin-bottom: 2rem;\n}\n\n.gap-1 {\n  gap: 1rem;\n}\n\n.text-align-center {\n  text-align: center;\n}\n\n/*#endregion UTILITY CLASSES */\n/*#region HEADER */\nheader .store-logo-wrapper .logo-link-home {\n  position: relative;\n  font-weight: 600;\n}\nheader .store-logo-wrapper .logo-link-home .tooltiptext {\n  visibility: hidden;\n  width: 120px;\n  background-color: black;\n  color: #fff;\n  text-align: center;\n  border-radius: 6px;\n  padding: 5px 0;\n  position: absolute;\n  z-index: 1;\n  top: -5px;\n  left: 110%;\n  font-weight: 300;\n  font-size: 10px;\n  padding-inline: 10px;\n}\nheader .store-logo-wrapper .logo-link-home .tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  right: 100%;\n  margin-top: -5px;\n  border-width: 5px;\n  border-style: solid;\n  border-color: transparent black transparent transparent;\n}\nheader .store-logo-wrapper .logo-link-home:hover .tooltiptext {\n  visibility: visible;\n}\n\n/*#endregion HEADER */\n/*#region PRODUCT CARDS*/\n.products {\n  margin-block: 2rem;\n  position: relative;\n  padding: 0;\n  list-style: none;\n  gap: 0.625rem;\n}\n.products .product {\n  flex: 1;\n  background-color: rgb(237, 237, 237);\n}\n.products .product .product-card {\n  transition: all 0.3s ease-in-out;\n}\n.products .product .product-card figure picture {\n  overflow: hidden;\n}\n.products .product .product-card figure picture img {\n  width: 100%;\n  min-height: 458px;\n  object-fit: cover;\n  transition: all 0.3s ease-in-out;\n}\n.products .product .product-card:hover figure picture img {\n  transform: scale(1.3);\n}\n.products .product .product-card article.product-dets {\n  padding: 1rem;\n}\n.products .product .product-card article.product-dets .price .rating .star-rating-container {\n  color: #f3b700;\n}\n\n/*#endregion PRODUCT CARDS*/\n/*#region PRODUCT PAGE*/\narticle div .product-img-wrapper {\n  max-width: 650px;\n}\narticle div .product-details-container {\n  padding-inline: 2rem;\n}\narticle div .product-details-container h1.product-title {\n  font-size: 2.5rem;\n}\narticle div .product-details-container .product-current-price {\n  font-size: 1.7rem;\n}\narticle div .product-details-container .short-desc p {\n  margin-block: 2.5rem;\n  font-size: 14px;\n}\narticle div .product-details-container div .dropdown.size-dropdown {\n  padding: 1rem;\n  border: 1px solid #333;\n}\n\n/*#endregion PRODUCT PAGE*/", "",{"version":3,"sources":["webpack://./styles/style.scss"],"names":[],"mappings":"AAEA,qBAAA;AACA,qBAAA;AACA;;;EAGI,sBAAA;AAAJ;;AAGA,0BAAA;AACA;;;;;;;;;;EAUI,SAAA;AAAJ;;AAGA,2GAAA;AACA;;EAEI,gBAAA;AAAJ;;AAGA,2BAAA;AACA;EACI,uBAAA;AAAJ;;AAGA,2BAAA;AACA;EACI,iBAAA;EACA,6BAAA;EACA,gBAAA;AAAJ;;AAGA,0DAAA;AACA;EACI,8BAAA;AAAJ;;AAGA;EACI,qBAAA;EACA,WAAA;AAAJ;AAEI;EACI,cAAA;AAAR;;AAIA,oCAAA;AACA;;EAEI,eAAA;EACA,cAAA;AADJ;;AAIA,yCAAA;AACA;;;;EAII,aAAA;AADJ;;AAIA,gGAAA;AACA;EACI;IACI,qBAAA;EADN;EAIE;;;IAGI,qCAAA;IACA,uCAAA;IACA,sCAAA;IACA,gCAAA;EAFN;AACF;AAKA;EACI,eAAA;EACA,YAAA;AAHJ;AAKI;EACI,aAAA;EACA,sBAAA;AAHR;AAKQ;EACI,gBAAA;AAHZ;;AAQA,wBAAA;AAEA;EACI,iCAAA;EACA,0CAAA;AANJ;;AASA;EACI,2BAAA;AANJ;;AASA;;;;;EAKI,8BAAA;AANJ;;AASA,2BAAA;AACA;EACI,sBAAA;EACA,mBAAA;EACA,aAAA;AANJ;;AAWA;EACI,aAAA;EACA,0BAAA;AARJ;;AAWA;EACI,2DAAA;AARJ;;AAWA;EACI,qCAAA;AARJ;;AAWA;EACI,aAAA;AARJ;;AAYA;EACI,8BAAA;AATJ;;AAYA;EACI,kBAAA;AATJ;;AAYA;EACI,oBAAA;AATJ;;AAYA;EACI,qBAAA;AATJ;;AAYA;EACI,mBAAA;AATJ;;AAYA;EACI,SAAA;AATJ;;AAaA;EACI,kBAAA;AAVJ;;AAaA,8BAAA;AAEA,kBAAA;AAGQ;EACI,kBAAA;EACA,gBAAA;AAbZ;AAeY;EACI,kBAAA;EACA,YAAA;EACA,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,cAAA;EACA,kBAAA;EACA,UAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,eAAA;EACA,oBAAA;AAbhB;AAegB;EACI,WAAA;EACA,kBAAA;EACA,QAAA;EACA,WAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;EACA,uDAAA;AAbpB;AAkBgB;EACI,mBAAA;AAhBpB;;AAuBA,qBAAA;AAEA,wBAAA;AACA;EACI,kBAAA;EACA,kBAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;AArBJ;AAuBI;EACI,OAAA;EACA,oCAAA;AArBR;AAuBQ;EACI,gCAAA;AArBZ;AAwBgB;EACI,gBAAA;AAtBpB;AAwBoB;EACI,WAAA;EACA,iBAAA;EACA,iBAAA;EACA,gCAAA;AAtBxB;AA8BwB;EACI,qBAAA;AA5B5B;AAmCY;EACI,aAAA;AAjChB;AAqCwB;EACI,cAAA;AAnC5B;;AA6CA,2BAAA;AAEA,uBAAA;AAGQ;EACI,gBAAA;AA7CZ;AAgDQ;EACI,oBAAA;AA9CZ;AAgDY;EACI,iBAAA;AA9ChB;AAiDY;EACI,iBAAA;AA/ChB;AAmDgB;EACI,oBAAA;EACA,eAAA;AAjDpB;AAsDgB;EACI,aAAA;EACA,sBAAA;AApDpB;;AA2DA,0BAAA","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');\n\n/*#region CSS Reset */\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n    box-sizing: border-box;\n}\n\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nfigure,\nblockquote,\ndl,\ndd {\n    margin: 0;\n}\n\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul[role='list'],\nol[role='list'] {\n    list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n    scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n    min-height: 100vh;\n    text-rendering: optimizeSpeed;\n    line-height: 1.5;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n    text-decoration-skip-ink: auto;\n}\n\na {\n    text-decoration: none;\n    color: #333;\n\n    &:hover {\n        color: #8e1fff;\n    }\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n    max-width: 100%;\n    display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n    font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n    html:focus-within {\n        scroll-behavior: auto;\n    }\n\n    *,\n    *::before,\n    *::after {\n        animation-duration: 0.01ms !important;\n        animation-iteration-count: 1 !important;\n        transition-duration: 0.01ms !important;\n        scroll-behavior: auto !important;\n    }\n}\n\nhtml {\n    font-size: 16px;\n    height: 100%;\n\n    body {\n        display: flex;\n        flex-direction: column;\n\n        footer {\n            margin-top: auto;\n        }\n    }\n}\n\n/*#endregion CSS Reset */\n\n:root {\n    --ff-heading: 'Inter', sans-serif;\n    --ff-body: 'Plus Jakarta Sans', sans-serif;\n}\n\nbody {\n    font-family: var(--ff-body);\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: var(--ff-heading);\n}\n\n/*#region UTILITY CLASSES */\n.container {\n    width: min(90%, 90rem);\n    margin-inline: auto;\n    padding: 1rem;\n}\n\n\n// layouts\n.grid {\n    display: grid;\n    grid-template-columns: 1fr;\n}\n\n.auto-fit {\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n.grid-col-2 {\n    grid-template-columns: repeat(2, 1fr);\n}\n\n.d-flex {\n    display: flex;\n}\n\n// space between \n.justify-between {\n    justify-content: space-between;\n}\n\n.space-y-1 {\n    margin-block: 1rem;\n}\n\n.space-y-24px {\n    margin-block: 1.5rem;\n}\n\n.space-y-bottom-24px {\n    margin-bottom: 1.5rem;\n}\n\n.space-y-bottom-32px {\n    margin-bottom: 2rem;\n}\n\n.gap-1 {\n    gap: 1rem;\n}\n\n// text alignment \n.text-align-center {\n    text-align: center;\n}\n\n/*#endregion UTILITY CLASSES */\n\n/*#region HEADER */\nheader {\n    .store-logo-wrapper {\n        .logo-link-home {\n            position: relative;\n            font-weight: 600;\n\n            .tooltiptext {\n                visibility: hidden;\n                width: 120px;\n                background-color: black;\n                color: #fff;\n                text-align: center;\n                border-radius: 6px;\n                padding: 5px 0;\n                position: absolute;\n                z-index: 1;\n                top: -5px;\n                left: 110%;\n                font-weight: 300;\n                font-size: 10px;\n                padding-inline: 10px;\n\n                &::after {\n                    content: \"\";\n                    position: absolute;\n                    top: 50%;\n                    right: 100%;\n                    margin-top: -5px;\n                    border-width: 5px;\n                    border-style: solid;\n                    border-color: transparent black transparent transparent;\n                }\n            }\n\n            &:hover {\n                .tooltiptext {\n                    visibility: visible;\n                }\n            }\n        }\n    }\n}\n\n/*#endregion HEADER */\n\n/*#region PRODUCT CARDS*/\n.products {\n    margin-block: 2rem;\n    position: relative;\n    padding: 0;\n    list-style: none;\n    gap: 0.625rem;\n\n    .product {\n        flex: 1;\n        background-color: rgb(237, 237, 237);\n\n        .product-card {\n            transition: all .3s ease-in-out;\n\n            figure {\n                picture {\n                    overflow: hidden;\n\n                    img {\n                        width: 100%;\n                        min-height: 458px;\n                        object-fit: cover;\n                        transition: all .3s ease-in-out;\n                    }\n                }\n            }\n\n            &:hover {\n                figure {\n                    picture {\n                        img {\n                            transform: scale(1.3);\n                        }\n                    }\n                }\n            }\n\n\n            article.product-dets {\n                padding: 1rem;\n\n                .price {\n                    .rating {\n                        .star-rating-container {\n                            color: #f3b700;\n                        }\n                    }\n                }\n            }\n        }\n\n    }\n}\n\n/*#endregion PRODUCT CARDS*/\n\n/*#region PRODUCT PAGE*/\narticle {\n    div {\n        .product-img-wrapper {\n            max-width: 650px;\n        }\n\n        .product-details-container {\n            padding-inline: 2rem;\n\n            h1.product-title {\n                font-size: 2.5rem;\n            }\n\n            .product-current-price {\n                font-size: 1.7rem;\n            }\n\n            .short-desc {\n                p {\n                    margin-block: 2.5rem;\n                    font-size: 14px;\n                }\n            }\n\n            div {\n                .dropdown.size-dropdown {\n                    padding: 1rem;\n                    border: 1px solid #333;\n                }\n            }\n        }\n    }\n}\n\n/*#endregion PRODUCT PAGE*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*#region CSS Reset */\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nfigure,\nblockquote,\ndl,\ndd {\n  margin: 0;\n}\n\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul[role=list],\nol[role=list] {\n  list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n  scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n  min-height: 100vh;\n  text-rendering: optimizeSpeed;\n  line-height: 1.5;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n  text-decoration-skip-ink: auto;\n}\n\na {\n  text-decoration: none;\n  color: #333;\n}\na:hover {\n  color: #8e1fff;\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n  max-width: 100%;\n  display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n  html:focus-within {\n    scroll-behavior: auto;\n  }\n  *,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}\nhtml {\n  font-size: 16px;\n  height: 100%;\n}\nhtml body {\n  display: flex;\n  flex-direction: column;\n}\nhtml body footer {\n  margin-top: auto;\n}\n\n/*#endregion CSS Reset */\n:root {\n  --ff-heading: \"Inter\", sans-serif;\n  --ff-body: \"Plus Jakarta Sans\", sans-serif;\n}\n\nbody {\n  font-family: var(--ff-body);\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n  font-family: var(--ff-heading);\n}\n\n/*#region UTILITY CLASSES */\n.container {\n  width: min(90%, 90rem);\n  margin-inline: auto;\n  padding: 1rem;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: 1fr;\n}\n\n.auto-fit {\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n.grid-col-2 {\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.d-flex {\n  display: flex;\n}\n\n.justify-between {\n  justify-content: space-between;\n}\n\n.space-y-1 {\n  margin-block: 1rem;\n}\n\n.space-y-24px {\n  margin-block: 1.5rem;\n}\n\n.space-y-bottom-24px {\n  margin-bottom: 1.5rem;\n}\n\n.space-y-bottom-32px {\n  margin-bottom: 2rem;\n}\n\n.padding-y-1 {\n  padding-block: 1rem;\n}\n\n.padding-y-2 {\n  padding-block: 1.25rem;\n}\n\n.gap-1 {\n  gap: 1rem;\n}\n\n.text-align-center {\n  text-align: center;\n}\n\n.border-bottom-1 {\n  border-bottom: 1px solid rgb(128, 128, 128);\n}\n\n/*#endregion UTILITY CLASSES */\n/*#region HEADER */\nheader .store-logo-wrapper .logo-link-home {\n  position: relative;\n  font-weight: 600;\n}\nheader .store-logo-wrapper .logo-link-home .tooltiptext {\n  visibility: hidden;\n  width: 120px;\n  background-color: black;\n  color: #fff;\n  text-align: center;\n  border-radius: 6px;\n  padding: 5px 0;\n  position: absolute;\n  z-index: 1;\n  top: -5px;\n  left: 110%;\n  font-weight: 300;\n  font-size: 10px;\n  padding-inline: 10px;\n}\nheader .store-logo-wrapper .logo-link-home .tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  right: 100%;\n  margin-top: -5px;\n  border-width: 5px;\n  border-style: solid;\n  border-color: transparent black transparent transparent;\n}\nheader .store-logo-wrapper .logo-link-home:hover .tooltiptext {\n  visibility: visible;\n}\n\n/*#endregion HEADER */\n/*#region PRODUCT CARDS*/\n.products {\n  margin-block: 2rem;\n  position: relative;\n  padding: 0;\n  list-style: none;\n  gap: 0.625rem;\n}\n.products .product {\n  flex: 1;\n  background-color: rgb(237, 237, 237);\n}\n.products .product .product-card {\n  transition: all 0.3s ease-in-out;\n}\n.products .product .product-card figure picture {\n  overflow: hidden;\n}\n.products .product .product-card figure picture img {\n  width: 100%;\n  min-height: 458px;\n  object-fit: cover;\n  transition: all 0.3s ease-in-out;\n}\n.products .product .product-card:hover figure picture img {\n  transform: scale(1.3);\n}\n.products .product .product-card article.product-dets {\n  padding: 1rem;\n}\n.products .product .product-card article.product-dets .price .rating .star-rating-container {\n  color: #f3b700;\n}\n\n/*#endregion PRODUCT CARDS*/\n/*#region PRODUCT PAGE*/\narticle div .product-img-wrapper {\n  max-width: 650px;\n}\narticle div .product-details-container {\n  padding-inline: 2rem;\n}\narticle div .product-details-container h1.product-title {\n  font-size: 2.5rem;\n}\narticle div .product-details-container .product-current-price {\n  font-size: 1.7rem;\n}\narticle div .product-details-container .short-desc p {\n  margin-block: 2.5rem;\n  font-size: 14px;\n}\narticle div .product-details-container div .dropdown.size-dropdown {\n  padding: 1rem;\n  border: 1px solid #333;\n}\n\n.atc-btn {\n  border: 0;\n  background-color: #7415d4;\n  color: white;\n  padding: 1rem;\n  border-radius: 3px;\n}\n.atc-btn:hover {\n  background-color: #8e1fff;\n  cursor: pointer;\n}\n\n.cart-img {\n  max-width: 150px;\n}\n\n/*#endregion PRODUCT PAGE*/", "",{"version":3,"sources":["webpack://./styles/style.scss"],"names":[],"mappings":"AAEA,qBAAA;AACA,qBAAA;AACA;;;EAGI,sBAAA;AAAJ;;AAGA,0BAAA;AACA;;;;;;;;;;EAUI,SAAA;AAAJ;;AAGA,2GAAA;AACA;;EAEI,gBAAA;AAAJ;;AAGA,2BAAA;AACA;EACI,uBAAA;AAAJ;;AAGA,2BAAA;AACA;EACI,iBAAA;EACA,6BAAA;EACA,gBAAA;AAAJ;;AAGA,0DAAA;AACA;EACI,8BAAA;AAAJ;;AAGA;EACI,qBAAA;EACA,WAAA;AAAJ;AAEI;EACI,cAAA;AAAR;;AAIA,oCAAA;AACA;;EAEI,eAAA;EACA,cAAA;AADJ;;AAIA,yCAAA;AACA;;;;EAII,aAAA;AADJ;;AAIA,gGAAA;AACA;EACI;IACI,qBAAA;EADN;EAIE;;;IAGI,qCAAA;IACA,uCAAA;IACA,sCAAA;IACA,gCAAA;EAFN;AACF;AAKA;EACI,eAAA;EACA,YAAA;AAHJ;AAKI;EACI,aAAA;EACA,sBAAA;AAHR;AAKQ;EACI,gBAAA;AAHZ;;AAQA,wBAAA;AAEA;EACI,iCAAA;EACA,0CAAA;AANJ;;AASA;EACI,2BAAA;AANJ;;AASA;;;;;EAKI,8BAAA;AANJ;;AASA,2BAAA;AACA;EACI,sBAAA;EACA,mBAAA;EACA,aAAA;AANJ;;AAWA;EACI,aAAA;EACA,0BAAA;AARJ;;AAWA;EACI,2DAAA;AARJ;;AAWA;EACI,qCAAA;AARJ;;AAWA;EACI,aAAA;AARJ;;AAYA;EACI,8BAAA;AATJ;;AAYA;EACI,kBAAA;AATJ;;AAYA;EACI,oBAAA;AATJ;;AAYA;EACI,qBAAA;AATJ;;AAYA;EACI,mBAAA;AATJ;;AAYA;EACI,mBAAA;AATJ;;AAYA;EACI,sBAAA;AATJ;;AAYA;EACI,SAAA;AATJ;;AAaA;EACI,kBAAA;AAVJ;;AAcA;EACI,2CAAA;AAXJ;;AAcA,8BAAA;AAEA,kBAAA;AAGQ;EACI,kBAAA;EACA,gBAAA;AAdZ;AAgBY;EACI,kBAAA;EACA,YAAA;EACA,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,cAAA;EACA,kBAAA;EACA,UAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,eAAA;EACA,oBAAA;AAdhB;AAgBgB;EACI,WAAA;EACA,kBAAA;EACA,QAAA;EACA,WAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;EACA,uDAAA;AAdpB;AAmBgB;EACI,mBAAA;AAjBpB;;AAwBA,qBAAA;AAEA,wBAAA;AACA;EACI,kBAAA;EACA,kBAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;AAtBJ;AAwBI;EACI,OAAA;EACA,oCAAA;AAtBR;AAwBQ;EACI,gCAAA;AAtBZ;AAyBgB;EACI,gBAAA;AAvBpB;AAyBoB;EACI,WAAA;EACA,iBAAA;EACA,iBAAA;EACA,gCAAA;AAvBxB;AA+BwB;EACI,qBAAA;AA7B5B;AAoCY;EACI,aAAA;AAlChB;AAsCwB;EACI,cAAA;AApC5B;;AA8CA,2BAAA;AAEA,uBAAA;AAGQ;EACI,gBAAA;AA9CZ;AAiDQ;EACI,oBAAA;AA/CZ;AAiDY;EACI,iBAAA;AA/ChB;AAkDY;EACI,iBAAA;AAhDhB;AAoDgB;EACI,oBAAA;EACA,eAAA;AAlDpB;AAuDgB;EACI,aAAA;EACA,sBAAA;AArDpB;;AA4DA;EACI,SAAA;EACA,yBAAA;EACA,YAAA;EACA,aAAA;EACA,kBAAA;AAzDJ;AA2DI;EACI,yBAAA;EACA,eAAA;AAzDR;;AA6DA;EACI,gBAAA;AA1DJ;;AA6DA,0BAAA","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');\n\n/*#region CSS Reset */\n/* Box sizing rules */\n*,\n*::before,\n*::after {\n    box-sizing: border-box;\n}\n\n/* Remove default margin */\nbody,\nh1,\nh2,\nh3,\nh4,\np,\nfigure,\nblockquote,\ndl,\ndd {\n    margin: 0;\n}\n\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\nul[role='list'],\nol[role='list'] {\n    list-style: none;\n}\n\n/* Set core root defaults */\nhtml:focus-within {\n    scroll-behavior: smooth;\n}\n\n/* Set core body defaults */\nbody {\n    min-height: 100vh;\n    text-rendering: optimizeSpeed;\n    line-height: 1.5;\n}\n\n/* A elements that don't have a class get default styles */\na:not([class]) {\n    text-decoration-skip-ink: auto;\n}\n\na {\n    text-decoration: none;\n    color: #333;\n\n    &:hover {\n        color: #8e1fff;\n    }\n}\n\n/* Make images easier to work with */\nimg,\npicture {\n    max-width: 100%;\n    display: block;\n}\n\n/* Inherit fonts for inputs and buttons */\ninput,\nbutton,\ntextarea,\nselect {\n    font: inherit;\n}\n\n/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */\n@media (prefers-reduced-motion: reduce) {\n    html:focus-within {\n        scroll-behavior: auto;\n    }\n\n    *,\n    *::before,\n    *::after {\n        animation-duration: 0.01ms !important;\n        animation-iteration-count: 1 !important;\n        transition-duration: 0.01ms !important;\n        scroll-behavior: auto !important;\n    }\n}\n\nhtml {\n    font-size: 16px;\n    height: 100%;\n\n    body {\n        display: flex;\n        flex-direction: column;\n\n        footer {\n            margin-top: auto;\n        }\n    }\n}\n\n/*#endregion CSS Reset */\n\n:root {\n    --ff-heading: 'Inter', sans-serif;\n    --ff-body: 'Plus Jakarta Sans', sans-serif;\n}\n\nbody {\n    font-family: var(--ff-body);\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: var(--ff-heading);\n}\n\n/*#region UTILITY CLASSES */\n.container {\n    width: min(90%, 90rem);\n    margin-inline: auto;\n    padding: 1rem;\n}\n\n\n// layouts\n.grid {\n    display: grid;\n    grid-template-columns: 1fr;\n}\n\n.auto-fit {\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n.grid-col-2 {\n    grid-template-columns: repeat(2, 1fr);\n}\n\n.d-flex {\n    display: flex;\n}\n\n// space between \n.justify-between {\n    justify-content: space-between;\n}\n\n.space-y-1 {\n    margin-block: 1rem;\n}\n\n.space-y-24px {\n    margin-block: 1.5rem;\n}\n\n.space-y-bottom-24px {\n    margin-bottom: 1.5rem;\n}\n\n.space-y-bottom-32px {\n    margin-bottom: 2rem;\n}\n\n.padding-y-1 {\n    padding-block: 1rem;\n}\n\n.padding-y-2 {\n    padding-block: 1.25rem;\n}\n\n.gap-1 {\n    gap: 1rem;\n}\n\n// text alignment \n.text-align-center {\n    text-align: center;\n}\n\n//borders\n.border-bottom-1 {\n    border-bottom: 1px solid rgb(128, 128, 128);\n}\n\n/*#endregion UTILITY CLASSES */\n\n/*#region HEADER */\nheader {\n    .store-logo-wrapper {\n        .logo-link-home {\n            position: relative;\n            font-weight: 600;\n\n            .tooltiptext {\n                visibility: hidden;\n                width: 120px;\n                background-color: black;\n                color: #fff;\n                text-align: center;\n                border-radius: 6px;\n                padding: 5px 0;\n                position: absolute;\n                z-index: 1;\n                top: -5px;\n                left: 110%;\n                font-weight: 300;\n                font-size: 10px;\n                padding-inline: 10px;\n\n                &::after {\n                    content: \"\";\n                    position: absolute;\n                    top: 50%;\n                    right: 100%;\n                    margin-top: -5px;\n                    border-width: 5px;\n                    border-style: solid;\n                    border-color: transparent black transparent transparent;\n                }\n            }\n\n            &:hover {\n                .tooltiptext {\n                    visibility: visible;\n                }\n            }\n        }\n    }\n}\n\n/*#endregion HEADER */\n\n/*#region PRODUCT CARDS*/\n.products {\n    margin-block: 2rem;\n    position: relative;\n    padding: 0;\n    list-style: none;\n    gap: 0.625rem;\n\n    .product {\n        flex: 1;\n        background-color: rgb(237, 237, 237);\n\n        .product-card {\n            transition: all .3s ease-in-out;\n\n            figure {\n                picture {\n                    overflow: hidden;\n\n                    img {\n                        width: 100%;\n                        min-height: 458px;\n                        object-fit: cover;\n                        transition: all .3s ease-in-out;\n                    }\n                }\n            }\n\n            &:hover {\n                figure {\n                    picture {\n                        img {\n                            transform: scale(1.3);\n                        }\n                    }\n                }\n            }\n\n\n            article.product-dets {\n                padding: 1rem;\n\n                .price {\n                    .rating {\n                        .star-rating-container {\n                            color: #f3b700;\n                        }\n                    }\n                }\n            }\n        }\n\n    }\n}\n\n/*#endregion PRODUCT CARDS*/\n\n/*#region PRODUCT PAGE*/\narticle {\n    div {\n        .product-img-wrapper {\n            max-width: 650px;\n        }\n\n        .product-details-container {\n            padding-inline: 2rem;\n\n            h1.product-title {\n                font-size: 2.5rem;\n            }\n\n            .product-current-price {\n                font-size: 1.7rem;\n            }\n\n            .short-desc {\n                p {\n                    margin-block: 2.5rem;\n                    font-size: 14px;\n                }\n            }\n\n            div {\n                .dropdown.size-dropdown {\n                    padding: 1rem;\n                    border: 1px solid #333;\n                }\n            }\n        }\n    }\n}\n\n.atc-btn {\n    border: 0;\n    background-color: #7415d4;\n    color: white;\n    padding: 1rem;\n    border-radius: 3px;\n\n    &:hover {\n        background-color: #8e1fff;\n        cursor: pointer;\n    }\n}\n\n.cart-img {\n    max-width: 150px;\n}\n\n/*#endregion PRODUCT PAGE*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -552,6 +552,91 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/Views/CartPage.js":
+/*!*******************************!*\
+  !*** ./src/Views/CartPage.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../api */ "./src/api.js");
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util */ "./src/util.js");
+/* harmony import */ var _localStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../localStorage */ "./src/localStorage.js");
+
+
+
+
+const addToCart = (item, forceUpdate = false) => {
+  let cartItems = (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.getCartItems)();
+
+  const existItem = cartItems.find((x) => x.product === item.product);
+  if (existItem) {
+    cartItems = cartItems.map((x) =>
+      x.product === existItem.product ? item : x
+    );
+  } else {
+    cartItems = [...cartItems, item];
+  }
+  (0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.setCartitems)(cartItems);
+};
+
+const CartPage = {
+  after_render: () => {},
+  render: async () => {
+    const request = (0,_util__WEBPACK_IMPORTED_MODULE_1__.parseRequestUrl)();
+
+    if (request.id) {
+      const product = await (0,_api__WEBPACK_IMPORTED_MODULE_0__.getProduct)(request.id);
+      addToCart({
+        product: product._id,
+        name: product.name,
+        image: product.image,
+        price: product.price,
+        countInStock: product.countInStock,
+        qty: 1,
+      });
+    }
+
+    return `
+     <h1 class="space-y-24px border-bottom-1">Your Order</h1>
+     <p>${(0,_localStorage__WEBPACK_IMPORTED_MODULE_2__.getCartItems)().length}</p>
+            <div class="grid grid-col-2 border-bottom-1 padding-y-1">
+                <figure>
+                    <picture class="cart-img">
+                        <img src="asdf" alt="asdf">
+                    </picture>
+                </figure>
+                <div class="cart-details">
+                    <h3 class="product-name">
+                    adsf
+                    </h3>
+                    <p>$ asdf</p>
+                    <div class="item-count">
+                        <h4>Items:</h4>
+                        <span class="remove-item-count">
+                            <button id="less">-</button>
+                        </span>
+                        <span class="quantity">
+                            <input type="text" value="1">
+                        </span>
+                        <span class="add-item-count">
+                            <button id="add-more">+</button>
+                        </span>
+                    </div>
+                </div>
+            </div>`;
+  },
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CartPage);
+
+
+/***/ }),
+
 /***/ "./src/Views/Error404Page.js":
 /*!***********************************!*\
   !*** ./src/Views/Error404Page.js ***!
@@ -660,10 +745,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../api */ "./src/api.js");
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util */ "./src/util.js");
+/* harmony import */ var _components_Ratings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Ratings */ "./src/components/Ratings.js");
+
 
 
 
 const ProductPage = {
+  after_render: () => {
+    const request = (0,_util__WEBPACK_IMPORTED_MODULE_1__.parseRequestUrl)();
+    document.getElementById("add-to-cart").addEventListener("click", () => {
+      document.location.hash = `/cart/${request.id}`;
+    });
+  },
   render: async () => {
     const request = (0,_util__WEBPACK_IMPORTED_MODULE_1__.parseRequestUrl)();
     const product = await (0,_api__WEBPACK_IMPORTED_MODULE_0__.getProduct)(request.id);
@@ -686,16 +779,15 @@ const ProductPage = {
                   <p class="product-current-price">$ ${product.price}</p>
                   <div class="short-desc">
                       <p>${product.shortDesciption}</p>
-                  </div>
-                  <div class="d-flex gap-1">
-                      <div class="dropdown size-dropdown">
-                          34
-                      </div>
-                      <button>Select This Size</button>
-                  </div>
+                  </div>                  
                   <div class="sold-out-text space-y-24px">
-                      <p>Remaining Item: ${product.countInStock}</p>
+                      <p>Stocks: ${product.countInStock}</p>
+                      <div class="rating-wrapper space-y-24px">${_components_Ratings__WEBPACK_IMPORTED_MODULE_2__["default"].render({
+                        value: product.rating,
+                        text: `${product.numOfReviews} reviews`,
+                      })}</div>
                   </div>
+                  <button id="add-to-cart" class="atc-btn">Add To Cart</button>
               </article>
           </div>
         </article>`;
@@ -832,6 +924,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "apiUrl": () => (/* binding */ apiUrl)
 /* harmony export */ });
 const apiUrl = "http://localhost:8080";
+
+
+/***/ }),
+
+/***/ "./src/localStorage.js":
+/*!*****************************!*\
+  !*** ./src/localStorage.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getCartItems": () => (/* binding */ getCartItems),
+/* harmony export */   "setCartitems": () => (/* binding */ setCartitems)
+/* harmony export */ });
+const getCartItems = () => {
+  const cartItems = localStorage.getItem("cartItems")
+    ? JSON.parse(localStorage.getItem("cartItems"))
+    : [];
+  return cartItems;
+};
+
+const setCartitems = (cartItems) => {
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+};
 
 
 /***/ }),
@@ -4799,7 +4917,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Views_Error404Page_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Views/Error404Page.js */ "./src/Views/Error404Page.js");
 /* harmony import */ var _Views_HomePage_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/HomePage.js */ "./src/Views/HomePage.js");
 /* harmony import */ var _Views_ProductPage_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/ProductPage.js */ "./src/Views/ProductPage.js");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _Views_CartPage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/CartPage.js */ "./src/Views/CartPage.js");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/style.scss */ "./styles/style.scss");
+
 
 
 
@@ -4809,6 +4929,8 @@ __webpack_require__.r(__webpack_exports__);
 const routes = {
   "/": _Views_HomePage_js__WEBPACK_IMPORTED_MODULE_2__["default"],
   "/product/:id": _Views_ProductPage_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+  "/cart/:id": _Views_CartPage_js__WEBPACK_IMPORTED_MODULE_4__["default"],
+  "/cart/": _Views_CartPage_js__WEBPACK_IMPORTED_MODULE_4__["default"],
 };
 
 const router = async () => {
@@ -4822,6 +4944,7 @@ const router = async () => {
 
   const main = document.getElementById("section-products-wrapper");
   main.innerHTML = await screen.render();
+  await screen.after_render();
 };
 
 window.addEventListener("load", router);
@@ -4831,4 +4954,4 @@ window.addEventListener("hashchange", router);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundledb292a201926a18879817.js.map
+//# sourceMappingURL=bundled74b4d9c00884d48f2577.js.map

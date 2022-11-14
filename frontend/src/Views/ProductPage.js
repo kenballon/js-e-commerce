@@ -1,7 +1,14 @@
 import { getProduct } from "../api";
 import { parseRequestUrl } from "../util";
+import Rating from "../components/Ratings";
 
 const ProductPage = {
+  after_render: () => {
+    const request = parseRequestUrl();
+    document.getElementById("add-to-cart").addEventListener("click", () => {
+      document.location.hash = `/cart/${request.id}`;
+    });
+  },
   render: async () => {
     const request = parseRequestUrl();
     const product = await getProduct(request.id);
@@ -24,16 +31,15 @@ const ProductPage = {
                   <p class="product-current-price">$ ${product.price}</p>
                   <div class="short-desc">
                       <p>${product.shortDesciption}</p>
-                  </div>
-                  <div class="d-flex gap-1">
-                      <div class="dropdown size-dropdown">
-                          34
-                      </div>
-                      <button>Select This Size</button>
-                  </div>
+                  </div>                  
                   <div class="sold-out-text space-y-24px">
-                      <p>Remaining Item: ${product.countInStock}</p>
+                      <p>Stocks: ${product.countInStock}</p>
+                      <div class="rating-wrapper space-y-24px">${Rating.render({
+                        value: product.rating,
+                        text: `${product.numOfReviews} reviews`,
+                      })}</div>
                   </div>
+                  <button id="add-to-cart" class="atc-btn">Add To Cart</button>
               </article>
           </div>
         </article>`;
